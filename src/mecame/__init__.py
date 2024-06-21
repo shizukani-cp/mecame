@@ -1,2 +1,2 @@
 import sys
-import janome
+from janome.tokenizer import Tokenizer

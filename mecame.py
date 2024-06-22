@@ -12,8 +12,8 @@ tokenizer = Tokenizer()
 text = ""
 with open(FROMF, "r", encoding="utf-8") as f:
     for row in f:
-        for t in tokenizer.tokenize(row):
-            text += f"{str(t)}\n"
+        for t in tokenizer.tokenize(row, wakati=True):
+            text += f"{str(t)} "
 
 with open(SAVEF, "w", encoding="utf-8") as f:
     f.write(text)
